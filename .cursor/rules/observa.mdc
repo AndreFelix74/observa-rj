@@ -1,0 +1,28 @@
+---
+description: Regras permanentes do protótipo OBSERVA-RJ
+alwaysApply: true
+---
+
+# Regras do projeto OBSERVA-RJ
+
+## Conteúdo
+- Nunca mencionar parlamentares, partidos, mandatos ou gabinetes específicos, em nenhum lugar: HTML, CSS, JS, comentários, nomes de arquivos, nomes de classes, documentação ou mensagens de commit.
+- Nunca enquadrar o projeto ideologicamente. Temas como desinformação, polarização e comportamento político são objetos de pesquisa, não posicionamentos.
+- Nunca inventar números, resultados, nomes de pessoas, cargos, valores ou datas. Qualquer dado de exemplo deve exibir o rótulo visível "Ilustrativo".
+- Conteúdo ainda não definido deve aparecer como marcador de pendência (mecanismo definido na etapa 1), nunca como texto genérico de preenchimento ("lorem ipsum", "texto aqui" e semelhantes).
+- Textos em português, segundo a norma culta. Não usar "popular" como verbo; usar "povoar".
+
+## Técnica
+- Somente HTML, CSS e JavaScript puros. Sem frameworks, bibliotecas, npm, bundlers ou CDNs.
+- Todos os caminhos devem ser relativos (`css/base.css`, nunca `/css/base.css`), porque o site é servido sob o subcaminho `/observa-rj/` e também deve abrir direto do disco, sem rede.
+- HTML semântico, `lang="pt-BR"`, um único `h1`, hierarquia de títulos sem saltos.
+- Toda cor, fonte, tamanho e espaçamento vem de variáveis definidas em `css/tokens.css`. Nenhum valor de cor fixo fora desse arquivo.
+- A página deve funcionar completa sem JavaScript. Scripts apenas acrescentam conveniências.
+- Layout que funcione de 360 px a 1440 px de largura, sem rolagem horizontal.
+- Manter a tag `<meta name="robots" content="noindex, nofollow">` no `index.html`.
+
+## Processo
+- Antes de escrever código, apresentar o plano (arquivos afetados e o que muda em cada um) e aguardar confirmação.
+- Alterar apenas o que o prompt pede. Não refatorar nem "melhorar" partes fora do escopo.
+- Não fazer commits nem operações de git. O responsável pelo repositório faz isso.
+- Ao terminar, listar os arquivos criados ou alterados.
