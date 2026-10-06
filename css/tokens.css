@@ -1,0 +1,55 @@
+/*
+ * Variáveis de design do protótipo OBSERVA-RJ.
+ * Valores provisórios até a definição da direção visual (etapa 4).
+ * Toda cor, fonte, tamanho e espaçamento do projeto deve vir daqui.
+ */
+
+:root {
+  /* Cores */
+  --cor-fundo: #ffffff;
+  --cor-superficie: #f3f4f4;
+  --cor-texto: #1d2427;
+  --cor-texto-secundario: #4b5559;
+  --cor-destaque: #0e4a58;
+  --cor-borda: #d4d9db;
+  --cor-faixa-fundo: #2a3235;
+  --cor-faixa-texto: #ffffff;
+
+  /* Tipografia */
+  --fonte-texto: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --fonte-titulos: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --fs-sm: clamp(0.875rem, 0.85rem + 0.1vw, 0.9375rem);
+  --fs-base: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
+  --fs-md: clamp(1.125rem, 1.07rem + 0.25vw, 1.25rem);
+  --fs-lg: clamp(1.25rem, 1.15rem + 0.45vw, 1.5rem);
+  --fs-xl: clamp(1.5rem, 1.33rem + 0.75vw, 1.875rem);
+  --fs-2xl: clamp(1.875rem, 1.6rem + 1.2vw, 2.5rem);
+  --fs-3xl: clamp(2.25rem, 1.8rem + 2vw, 3.25rem);
+
+  --peso-normal: 400;
+  --peso-titulo: 700;
+
+  --altura-linha-texto: 1.6;
+  --altura-linha-titulo: 1.2;
+
+  /* Espaçamentos */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --sp-7: 3rem;
+  --sp-8: 4rem;
+
+  /* Layout */
+  --largura-max: 72rem;
+  --margem-lateral: max(16px, 4vw);
+
+  /* Bordas e foco */
+  --borda-espessura: 1px;
+  --raio: 0.25rem;
+  --foco-espessura: 3px;
+  --foco-afastamento: 2px;
+}
