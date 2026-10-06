@@ -120,6 +120,35 @@ Todo gráfico, número ou dado de exemplo deve ficar dentro de um bloco ilustrat
 
 O rótulo é texto real no HTML, não gerado por CSS, e aparece também na impressão.
 
+## 7. Índice de navegação
+
+O cabeçalho do `index.html` traz um índice de links âncora (`<nav class="indice" aria-label="Seções da página">`), não fixo no topo e sem JavaScript. A lista é horizontal e quebra em várias linhas em telas estreitas; os rótulos nunca se partem ao meio. A seção de abertura fica fora do índice.
+
+| Rótulo | Destino |
+| --- | --- |
+| Por que | `#lacuna` |
+| Como funciona | `#funcionamento` |
+| Módulos | `#modulos` |
+| Infraestrutura | `#logica-modular` |
+| Produtos | `#entregas` |
+| Quem faz | `#quem-faz` |
+| Como apoiar | `#apoio` |
+| Contato | `#contato` |
+
+Seções da página, na ordem:
+
+| `id` | Título (`h2`) |
+| --- | --- |
+| `abertura` | Uma forma de ler o estado em movimento |
+| `lacuna` | Por que um observatório |
+| `funcionamento` | Como funciona |
+| `modulos` | Módulos temáticos |
+| `logica-modular` | Uma infraestrutura, vários módulos |
+| `entregas` | O que o observatório produz |
+| `quem-faz` | Quem faz |
+| `apoio` | Como apoiar |
+| `contato` | Contato |
+
 ## Observação técnica
 
 A largura de 60rem usada na grade de módulos está fixa na media query de `css/base.css`, porque variáveis CSS não funcionam em media queries. É uma exceção consciente à regra de que todo tamanho vem de `css/tokens.css`.
