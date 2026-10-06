@@ -10,3 +10,11 @@
 - Nome provisório: OBSERVA-RJ (alternativa em discussão: Observatório Político do Rio de Janeiro).
 - Fontes do sistema até a definição da direção visual (etapa 4). Fontes definitivas serão hospedadas no repositório.
 - Fluxo: trabalho em branches por etapa; merge na `main` para publicar; tag por rodada de revisão do grupo (v0.1, v0.2…).
+
+## 2026-10-06 — Etapa 1
+- Pendências marcadas no HTML com o texto literal "A definir:", visíveis sem JavaScript e na impressão.
+- Painel de pendências gerado por script na faixa de protótipo, a partir dos marcadores da página.
+- Modo protótipo controlado pela classe `modo-prototipo` no `<html>`; os marcadores não somem ao desligá-lo.
+- Convenções de seções, módulos e blocos ilustrativos documentadas em `docs/convencoes.md`.
+- Página `exemplos.html` como referência das convenções, a remover antes do uso externo.
+- Cores dos módulos provisórias, usadas apenas como elemento gráfico, nunca como cor de texto.

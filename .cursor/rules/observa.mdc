@@ -9,7 +9,7 @@ alwaysApply: true
 - Nunca mencionar parlamentares, partidos, mandatos ou gabinetes específicos, em nenhum lugar: HTML, CSS, JS, comentários, nomes de arquivos, nomes de classes, documentação ou mensagens de commit.
 - Nunca enquadrar o projeto ideologicamente. Temas como desinformação, polarização e comportamento político são objetos de pesquisa, não posicionamentos.
 - Nunca inventar números, resultados, nomes de pessoas, cargos, valores ou datas. Qualquer dado de exemplo deve exibir o rótulo visível "Ilustrativo".
-- Conteúdo ainda não definido deve aparecer como marcador de pendência (mecanismo definido na etapa 1), nunca como texto genérico de preenchimento ("lorem ipsum", "texto aqui" e semelhantes).
+- Conteúdo ainda não definido deve aparecer como marcador de pendência (ver `docs/convencoes.md`), nunca como texto genérico de preenchimento ("lorem ipsum", "texto aqui" e semelhantes).
 - Textos em português, segundo a norma culta. Não usar "popular" como verbo; usar "povoar".
 
 ## Técnica
@@ -20,6 +20,7 @@ alwaysApply: true
 - A página deve funcionar completa sem JavaScript. Scripts apenas acrescentam conveniências.
 - Layout que funcione de 360 px a 1440 px de largura, sem rolagem horizontal.
 - Manter a tag `<meta name="robots" content="noindex, nofollow">` no `index.html`.
+- Seguir as convenções de marcação de `docs/convencoes.md` para seções, módulos, pendências e blocos ilustrativos.
 
 ## Processo
 - Antes de escrever código, apresentar o plano (arquivos afetados e o que muda em cada um) e aguardar confirmação.

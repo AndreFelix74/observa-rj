@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt-BR" class="modo-prototipo">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>OBSERVA-RJ — exemplos de convenções</title>
+  <meta name="description" content="Observatório de Opinião Pública, Mídia e Democracia do Estado do Rio de Janeiro. Protótipo para discussão interna.">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <script src="js/pendencias.js" defer></script>
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <div class="faixa-prototipo">
+    <div class="container">
+      <p>Protótipo para discussão interna — conteúdo e identidade visual provisórios.</p>
+      <!-- o painel de pendências é inserido aqui pelo script -->
+    </div>
+  </div>
+
+  <header class="cabecalho">
+    <div class="container">
+      <h1>Exemplos de convenções</h1>
+      <p class="cabecalho-nome-completo"><a href="index.html">Voltar para a página principal</a></p>
+    </div>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+    <div class="container">
+
+      <!-- ===== SEÇÃO: Exemplos ===== -->
+      <section id="exemplos" aria-labelledby="exemplos-titulo">
+        <h2 id="exemplos-titulo">Convenções de marcação</h2>
+
+        <h3>Pendência no texto</h3>
+        <p>Este parágrafo contém <span class="pendente" data-pendente="Exemplo no texto">A definir: trecho de texto ainda não redigido</span>, marcado no meio da frase.</p>
+
+        <h3>Pendência em bloco</h3>
+        <div class="pendente pendente-bloco" data-pendente="Exemplo em bloco">
+          <p>A definir: bloco de conteúdo ainda não redigido.</p>
+        </div>
+
+        <h3>Cartão de módulo</h3>
+        <article class="modulo" data-modulo="clima" aria-labelledby="modulo-clima-titulo">
+          <h3 id="modulo-clima-titulo">Clima e meio ambiente</h3>
+          <p class="modulo-descricao">Percepção dos riscos climáticos, responsabilização de governos e empresas e apoio a políticas ambientais no estado.</p>
+          <h4>Perguntas de pesquisa</h4>
+          <ul class="modulo-perguntas">
+            <li>Como os fluminenses percebem os riscos climáticos e quem responsabilizam por eles?</li>
+            <li>Como circulam narrativas de negação climática nas redes?</li>
+          </ul>
+          <h4>Desenho metodológico</h4>
+          <ul class="modulo-desenho">
+            <li>Grupos focais territoriais</li>
+            <li>Entrevistas</li>
+            <li>Análise de mídias digitais</li>
+          </ul>
+        </article>
+
+        <h3>Bloco ilustrativo</h3>
+        <figure class="ilustrativo">
+          <span class="rotulo-ilustrativo">Ilustrativo</span>
+          <p>Exemplo de bloco ilustrativo. Gráficos e números de exemplo devem vir dentro deste tipo de bloco.</p>
+        </figure>
+
+        <h3>Cores dos módulos</h3>
+        <div class="grade-modulos">
+          <article class="modulo" data-modulo="clima" aria-labelledby="grade-clima-titulo">
+            <h3 id="grade-clima-titulo">Clima e meio ambiente</h3>
+          </article>
+          <article class="modulo" data-modulo="seguranca" aria-labelledby="grade-seguranca-titulo">
+            <h3 id="grade-seguranca-titulo">Segurança pública</h3>
+          </article>
+          <article class="modulo" data-modulo="diversidade" aria-labelledby="grade-diversidade-titulo">
+            <h3 id="grade-diversidade-titulo">Diversidade e direitos</h3>
+          </article>
+          <article class="modulo" data-modulo="ruralidade" aria-labelledby="grade-ruralidade-titulo">
+            <h3 id="grade-ruralidade-titulo">Ruralidade, trabalho e alimentação</h3>
+          </article>
+          <article class="modulo" data-modulo="educacao" aria-labelledby="grade-educacao-titulo">
+            <h3 id="grade-educacao-titulo">Educação pública</h3>
+          </article>
+          <article class="modulo" data-modulo="mulheres" aria-labelledby="grade-mulheres-titulo">
+            <h3 id="grade-mulheres-titulo">Mulheres</h3>
+          </article>
+          <article class="modulo" data-modulo="ciencia" aria-labelledby="grade-ciencia-titulo">
+            <h3 id="grade-ciencia-titulo">Ciência e confiança</h3>
+          </article>
+          <article class="modulo" data-modulo="cultura" aria-labelledby="grade-cultura-titulo">
+            <h3 id="grade-cultura-titulo">Cultura e economia criativa</h3>
+          </article>
+          <article class="modulo" data-modulo="juventude" aria-labelledby="grade-juventude-titulo">
+            <h3 id="grade-juventude-titulo">Juventude, política e futuro</h3>
+          </article>
+        </div>
+      </section>
+      <!-- ===== FIM: Exemplos ===== -->
+
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p>LEMEP/IESP-UERJ · INCT ID-ICED</p>
+      <p class="rodape-versao">Versão 0.1 · protótipo · outubro de 2026</p>
+    </div>
+  </footer>
+</body>
+</html>
