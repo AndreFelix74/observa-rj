@@ -29,6 +29,12 @@ html {
   text-size-adjust: 100%;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -163,6 +169,25 @@ html:not(.modo-prototipo) .faixa-prototipo {
   font-size: var(--fs-md);
 }
 
+/* Índice de navegação */
+.indice {
+  margin-top: var(--sp-5);
+}
+
+.indice ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2) var(--sp-4);
+  padding: 0;
+  list-style: none;
+}
+
+.indice a {
+  color: var(--cor-destaque);
+  font-size: var(--fs-sm);
+  white-space: nowrap;
+}
+
 /* Rodapé */
 .rodape {
   padding-block: var(--sp-6);
@@ -172,8 +197,7 @@ html:not(.modo-prototipo) .faixa-prototipo {
   font-size: var(--fs-sm);
 }
 
-.rodape-versao,
-.rodape-contato {
+.rodape-versao {
   margin-top: var(--sp-1);
 }
 

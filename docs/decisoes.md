@@ -18,3 +18,10 @@
 - Convenções de seções, módulos e blocos ilustrativos documentadas em `docs/convencoes.md`.
 - Página `exemplos.html` como referência das convenções, a remover antes do uso externo.
 - Cores dos módulos provisórias, usadas apenas como elemento gráfico, nunca como cor de texto.
+
+## 2026-10-06 — Etapa 2
+- Ordem das seções: abertura, lacuna, funcionamento, módulos, lógica modular, entregas, quem faz, apoio, contato.
+- Índice de links âncora no cabeçalho, não fixo, sem JavaScript; a seção de abertura fica fora do índice.
+- Esqueleto montado apenas com títulos e pendências; a redação dos textos é a etapa 3.
+- Pendência de contato transferida do rodapé para a seção de contato.
+- Primeira circulação ao grupo prevista após a etapa 3.
