@@ -118,6 +118,35 @@ a {
   padding-block: var(--sp-2);
 }
 
+html:not(.modo-prototipo) .faixa-prototipo {
+  display: none;
+}
+
+/* Painel de pendências (inserido por js/pendencias.js) */
+.painel-pendencias {
+  margin-top: var(--sp-1);
+}
+
+.painel-pendencias summary {
+  cursor: pointer;
+  font-weight: var(--peso-titulo);
+}
+
+.painel-pendencias ol {
+  width: 100%;
+  margin-top: var(--sp-2);
+  padding-left: var(--sp-5);
+}
+
+.painel-pendencias li {
+  overflow-wrap: break-word;
+}
+
+.painel-pendencias a {
+  color: var(--cor-faixa-texto);
+  text-decoration: underline;
+}
+
 /* Cabeçalho */
 .cabecalho {
   padding-block: var(--sp-7) var(--sp-6);
@@ -143,8 +172,126 @@ a {
   font-size: var(--fs-sm);
 }
 
-.rodape-versao {
+.rodape-versao,
+.rodape-contato {
   margin-top: var(--sp-1);
+}
+
+/* Seções */
+main section {
+  padding-block: var(--sp-7);
+}
+
+main section > * + * {
+  margin-top: var(--sp-5);
+}
+
+/* Marcador de pendência */
+.pendente {
+  padding-inline: var(--sp-1);
+  background-color: var(--cor-pendente-fundo);
+  border: var(--borda-espessura) dashed var(--cor-pendente-borda);
+  border-radius: var(--raio);
+  color: var(--cor-texto);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.pendente-bloco {
+  display: block;
+  padding: var(--sp-4);
+}
+
+/* Módulos temáticos */
+.modulo {
+  padding: var(--sp-5);
+  background-color: var(--cor-superficie);
+  border-top: var(--barra-modulo) solid var(--cor-modulo, var(--cor-borda));
+  border-radius: var(--raio);
+}
+
+.modulo > * + * {
+  margin-top: var(--sp-3);
+}
+
+.modulo-perguntas li::marker,
+.modulo-desenho li::marker {
+  color: var(--cor-modulo, var(--cor-borda));
+}
+
+[data-modulo="clima"] {
+  --cor-modulo: var(--cor-modulo-clima);
+}
+
+[data-modulo="seguranca"] {
+  --cor-modulo: var(--cor-modulo-seguranca);
+}
+
+[data-modulo="diversidade"] {
+  --cor-modulo: var(--cor-modulo-diversidade);
+}
+
+[data-modulo="ruralidade"] {
+  --cor-modulo: var(--cor-modulo-ruralidade);
+}
+
+[data-modulo="educacao"] {
+  --cor-modulo: var(--cor-modulo-educacao);
+}
+
+[data-modulo="mulheres"] {
+  --cor-modulo: var(--cor-modulo-mulheres);
+}
+
+[data-modulo="ciencia"] {
+  --cor-modulo: var(--cor-modulo-ciencia);
+}
+
+[data-modulo="cultura"] {
+  --cor-modulo: var(--cor-modulo-cultura);
+}
+
+[data-modulo="juventude"] {
+  --cor-modulo: var(--cor-modulo-juventude);
+}
+
+/* Grade de módulos (60rem fixo: variáveis não funcionam em media queries) */
+.grade-modulos {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--sp-5);
+}
+
+@media (min-width: 60rem) {
+  .grade-modulos {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Bloco ilustrativo */
+.ilustrativo {
+  padding: var(--sp-5);
+  border: var(--borda-espessura) solid var(--cor-borda);
+  border-radius: var(--raio);
+}
+
+.ilustrativo > * + * {
+  margin-top: var(--sp-3);
+}
+
+.rotulo-ilustrativo {
+  display: inline-block;
+  padding: var(--sp-1) var(--sp-2);
+  background-color: var(--cor-ilustrativo-fundo);
+  color: var(--cor-ilustrativo-texto);
+  border-radius: var(--raio);
+  font-size: var(--fs-sm);
+  font-weight: var(--peso-titulo);
+  text-transform: uppercase;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 
 /* Foco visível */
@@ -155,6 +302,10 @@ a {
 
 .pular-conteudo:focus-visible {
   outline-color: var(--cor-faixa-fundo);
+}
+
+.faixa-prototipo :focus-visible {
+  outline-color: var(--cor-faixa-texto);
 }
 
 #conteudo:focus {

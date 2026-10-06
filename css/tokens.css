@@ -14,6 +14,21 @@
   --cor-borda: #d4d9db;
   --cor-faixa-fundo: #2a3235;
   --cor-faixa-texto: #ffffff;
+  --cor-pendente-fundo: #fff6d6;
+  --cor-pendente-borda: #b38600;
+  --cor-ilustrativo-fundo: #e6eef0;
+  --cor-ilustrativo-texto: #0e4a58;
+
+  /* Cores provisórias dos módulos (uso gráfico, contraste mínimo de 3:1 sobre branco; nunca como cor de texto) */
+  --cor-modulo-clima: #2f7d4f;
+  --cor-modulo-seguranca: #9b3b2f;
+  --cor-modulo-diversidade: #7a4a9c;
+  --cor-modulo-ruralidade: #8a6d1f;
+  --cor-modulo-educacao: #1f5f9c;
+  --cor-modulo-mulheres: #a63a6b;
+  --cor-modulo-ciencia: #2b7a8a;
+  --cor-modulo-cultura: #b0562a;
+  --cor-modulo-juventude: #5a6b1f;
 
   /* Tipografia */
   --fonte-texto: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -49,6 +64,7 @@
 
   /* Bordas e foco */
   --borda-espessura: 1px;
+  --barra-modulo: 4px;
   --raio: 0.25rem;
   --foco-espessura: 3px;
   --foco-afastamento: 2px;
